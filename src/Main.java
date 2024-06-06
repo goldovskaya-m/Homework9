@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Homework9");
         System.out.println("Задача 1");
-        double[] monday = {3, 5, 7, 9, 8};
+        double[] monday = {3, 5, 2, 7, 9, 8, 44};
         double sum = 0;
         for (int i = 0; i < monday.length; i++) {
             sum += monday[i];
@@ -18,21 +18,15 @@ public class Main {
 
             if (monday[i] > minMonday) {
                 maxMonday = monday[i];
-                if (monday[i] < maxMonday) {
-                    minMonday = monday[i];
-                }
-
-
-
-
-
-
-
-
+            }
+            if (monday[i] < maxMonday) {
+                minMonday = monday[i];
             }
         }
+
         System.out.println("Максимальные расходы за месяц " + maxMonday);
         System.out.println("Минимальный расход за месяц " + minMonday);
+
 
         System.out.println("Задача 3");
         double sum2 = 0;
@@ -75,5 +69,3 @@ public class Main {
 
     }
 }
-
-
